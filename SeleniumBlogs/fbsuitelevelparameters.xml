@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="UserName"
+		value="onlyfortestingautomation@gmail.com" />
+	<parameter name="Password" value="Automation123" />
+	<test thread-count="5" name="fbregister">
+		<parameter name="FirstName" value="Selenium" />
+		<parameter name="LastName" value="TestAccount" />
+		<parameter name="Date" value="5" />
+		<parameter name="Month" value="10" />
+		<parameter name="Year" value="1989" />
+		<parameter name="Sex" value="0" />
+		<classes>
+			<class name="POMTestNG.FBRegisterTest" />
+		</classes>
+	</test> <!-- FBregister -->
+	<test thread-count="5" name="FBLogin">
+		<classes>
+			<class name="POMTestNG.FBLoginTest" />
+		</classes>
+	</test> <!-- FBLogin -->
+</suite> <!-- Suite -->
